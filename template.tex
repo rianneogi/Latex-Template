@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm, complexity}
+\usepackage{bbold, mathbbol, bbm}
+\usepackage{authblk, stackengine, tikz, algpseudocode, capt-of}
+\usepackage{varwidth, sectsty}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[capitalize]{cleveref}
+
+\linespread{1.1}
+\setlength{\rightmargin}{0cm} \setlength{\textwidth}{17cm}
+\setlength{\textheight}{21cm} \setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm} \setlength{\topmargin}{0.5cm}
+\setlength{\footskip}{1.0cm}
+
+%Linear Algebra
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\Null}{{\operatorname{Null}}}
+\newcommand{\rank}{{\operatorname{rank}}}
+
+%Probability
+\newcommand{\Ex}{\mathbb{E}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+
+%Optimization
+\newcommand{\opt}{\operatorname{opt}}
+\newcommand{\OPT}{\operatorname{OPT}}
+\newcommand{\argmax}{\operatorname{argmax}}
+\newcommand{\argmin}{\operatorname{argmin}}
+
+%Theorems
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{claim}{Claim}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{observation}{Observation}
+\newtheorem{fact}{Fact}
+
+\newcommand{\defproblem}[3]{
+  \vspace{3mm}
+\noindent\fbox{
+  \begin{minipage}{0.95\textwidth}
+	  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr} \textsc{#1}  \\ \end{tabular*}
+  {\bf{Given:}} #2  \\
+  {\bf{Output:}} #3
+  \end{minipage}
+  }
+  \vspace{2mm}
+}
+
+\title{Title}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+
+% {\everymath={\displaystyle}
+% \[
+% 	\begin{array}{rrclll}
+% 		\text{maximize} & \sum_{e=(v,w) \in E} w_e \cdot \frac{1}{N} \sum_{i=1}^N \langle v_{\pi_e(i)},w_i \rangle  & & & & \\
+% 		\text{subject to} & \sum_{i=1}^N \langle v_i,v_i \rangle  & = & N, & \forall v \in V &  \\
+% 		& \langle v_i,v_j \rangle  & = & 0, & \forall v \in V, \forall i\neq j & \\
+% 		& \langle v_i,w_j \rangle  &\ge  & 0, & \forall v,w \in V, \forall i,j & \\
+% 		& \sum_{1\le i,j\le N} \langle v_i,w_j \rangle  & = & N, & \forall v,w \in V & 
+% 	\end{array}
+% \]}
+
+
+
+
+
+
+
+% \bibliographystyle{alpha} %styles: alpha, unsrt, siam, plain, ieeetr, apalike, acm, abbrv
+% \bibliography{refs}
+
+\end{document}
